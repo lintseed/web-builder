@@ -9917,6 +9917,7 @@ a:focus, a:hover {
 
 #menu .pure-menu, #menu .pure-menu ul {
   border: none;
+  overflow: scroll;
 }
 
 #menu .pure-menu-heading:hover, #menu .pure-menu-selected:hover {
