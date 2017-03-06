@@ -29,15 +29,28 @@
 <!--        <script src="style-assets/lib/slick-1.6.0/slick/slick.min.js"></script>-->
         <script src="style-assets/lib/boostrap/bootstrap.min.js"></script>
         <script>
-        $(document).ready(function() {
-            $('#homepage-feature-caption').carousel({
+        // $(document).ready(function() {
+        //     $('#homepage-feature-caption').carousel({
+        //         wrap: false,
+        //         interval: 1500,
+        //         keyboard: true
+        //     });
+        //     $('#homepage-feature-caption').on('slide.bs.carousel', function() {
+        //         console.log('slid');
+        //     } );
+        // });
+
+
+				$(document).ready(function() {
+          	if($('.news-features__small-row .news-feature').length == 3) {
+  							$('.news-features__small-row .news-feature').first().hide();
+						}
+						$('#homepage-feature-caption').find('.homepage-feature-caption-item').first().addClass('active').parent('#homepage-feature-caption').carousel({
                 wrap: false,
                 interval: 1500,
                 keyboard: true
             });
-            $('#homepage-feature-caption').on('slide.bs.carousel', function() {
-                console.log('slid');
-            } );
+						$('.carousel').carousel('cycle');
         });
         </script>
     </body>
