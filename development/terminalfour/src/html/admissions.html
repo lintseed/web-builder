@@ -374,6 +374,43 @@ $(window).scroll(function(){
                         <!-- SITEMANAGER HEADER ENDS HERE -->
                         <!-- *********************************  -->
                         <div class="row">
+                          <table style="width:100%">
+                            <tr>
+                              <td class="first col-xs-12 col-sm-8">
+                                <a href="/visit/">
+                                  <img class="img-responsive admissions-img" src="http://msudenver.edu/media/content/admissions/images/Open%20House%20Spring%202017.jpg" alt="" style="width:100%" />
+                                </a>
+                              </td>
+                              <td class="second col-xs-12 col-sm-4" >
+                                  <div class="give-visit-buttons action-one clickable action-btns" data-href="apply">
+                                      <span>WHAT TYPE OF STUDENT ARE YOU?</span>
+                                  </div>
+                                  <div class="rowdyred action-one clickable action-btns" data-href="apply">
+                                      <span>START YOUR APPLICATION</span>
+                                  </div>
+                                  <div class="rowdyblue action-two clickable action-btns" data-href="https://admission.msudenver.edu/Datatel.ERecruiting.Web.External/Pages/welcome.aspx">
+                                      <span>CHECK STATUS / FINISH APPLICATION</span>
+                                  </div>
+                                  <div class="give-visit-buttons action-three clickable action-btns" data-href="after">
+                                      <span>AFTER YOU'VE BEEN ADMITTED</span>
+                                  </div>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+<style>
+.first img { display: none; }
+</style>
+<script>
+$("table tr").each(function() {
+    $(this).find(".first img").css("height",
+        $(this).find(".second").height()).show();
+});
+</script>
+
+
+
+                        <div class="row">
                           <div class="col-xs-12 col-sm-8">
                             <a href="/visit/">
                               <img class="img-responsive admissions-img" src="http://msudenver.edu/media/content/admissions/images/Open%20House%20Spring%202017.jpg" alt="" style="   " />
