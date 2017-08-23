@@ -10914,7 +10914,7 @@ hr.style-one {
 }
 
 .hero-caption {
-  color: #fff;
+  color: #1e1e1e;
   right: 0;
   bottom: 0;
   position: static !important;
@@ -10933,6 +10933,7 @@ hr.style-one {
 
 @media screen and (min-width: 992px) {
   .hero-caption {
+    color: #fff;
     width: 40%;
     float: right;
     position: absolute !important;
