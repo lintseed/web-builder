@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   margin-bottom: 15px;
+  background: rgba(0,0,0,.5);
   }
 
 .content .hero > .img-responsive {
@@ -8,7 +9,7 @@
 }
 
 .hero-caption {
-  color: #1e1e1e;
+  color: #fff;
   right: 0;
   bottom: 0;
   position: static !important;
@@ -19,7 +20,7 @@
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   bottom: auto !important;
-  padding: 2%;
+  padding: 0%;
   h1, h2, h3, h4, h5, h6 {
     color: #fff;
   }
@@ -27,7 +28,6 @@
 
 @media screen and (min-width: 992px) {
   .hero-caption {
-    color: #fff;
     width: 40%;
     float: right;
     position: absolute !important;
@@ -35,5 +35,17 @@
     right: 0;
     left: auto;
     bottom: 0 !important;
+    padding: 2%;
+  }
+
+  .hero p {
+    padding: 2%;
+  }
+
+  .hero span > :first-child {
+    padding-top: 2% !important;
+  }
+  .hero span > :last-child {
+    padding-bottom: 2% !important;
   }
 }
