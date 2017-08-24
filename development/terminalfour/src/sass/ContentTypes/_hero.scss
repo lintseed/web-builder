@@ -25,6 +25,15 @@
     color: #fff;
   }
 }
+.hero p {
+  padding: 0 2%;
+}
+.hero span > :first-child {
+  padding-top: 2% !important;
+}
+.hero span > :last-child {
+  padding-bottom: 2% !important;
+}
 
 @media screen and (min-width: 992px) {
   .hero-caption {
@@ -39,13 +48,13 @@
   }
 
   .hero p {
-    padding: 2%;
+    padding: inherit;
   }
 
   .hero span > :first-child {
-    padding-top: 2% !important;
+    padding-top: inherit;
   }
   .hero span > :last-child {
-    padding-bottom: 2% !important;
+    padding-bottom: inherit;
   }
 }
